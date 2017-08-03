@@ -1,0 +1,116 @@
+Best accuracy using Multinomial Naive Bayes was:
+	93.30543933054393% with Skip stopwords = no &
+	92.46861924686193% with Skip stopwords = yes
+
+Logistic Regression:
+|-------------------|-----------------------|---------------------------|-----------------------|
+|	Skip stopwords	|	Learning Rate		|	Lambda					|	Accuracy			|
+|-------------------|-----------------------|---------------------------|-----------------------|
+|	no				|	0.5684614750463296	|	0.007903417685980574	|	90.5857740585774%	|
+|	no				|	0.4684614750463296	|	0.005903417685980574	|	88.70292887029288%	|
+|	no				|	0.3684614750463296	|	0.003903417685980574	|	89.7489539748954%	|
+|	no				|	0.2684614750463296	|	0.001903417685980574	|	88.28451882845188%	|
+|	no				|	0.1684614750463296	|	9.03417685980574E		|	88.70292887029288%	|
+|-------------------|-----------------------|---------------------------|-----------------------|
+|	yes				|	0.5684614750463296	|	0.007903417685980574	|	91.42259414225941%	|
+|	yes				|	0.4684614750463296	|	0.005903417685980574	|	90.1673640167364%	|
+|	yes				|	0.3684614750463296	|	0.003903417685980574	|	90.1673640167364%	|
+|	yes				|	0.2684614750463296	|	0.001903417685980574	|	90.3765690376569%	|
+|	yes				|	0.1684614750463296	|	9.03417685980574E		|	90.1673640167364%	|
+|-------------------|-----------------------|---------------------------|-----------------------|
+
+As learning rate kept low, it takes long time to reach convergence for weight update.
+After removing stopwords, accuracy increases.
+
+Perceptrons:
+|-------------------|-----------------------|---------------------------|-----------------------|
+|	Skip stopwords	|	Iterations			|	Learning Rate			|	Accuracy			|
+|-------------------|-----------------------|---------------------------|-----------------------|
+|	no				|	100					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	90					|	0.1684614750463296		|	90.1673640167364%	|
+|	no				|	80					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	70					|	0.4684614750463296		|	90.3765690376569%	|
+|	no				|	60					|	0.0684614750463296		|	90.3765690376569%	|
+|	no				|	50					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	40					|	0.4684614750463296		|	89.3765690376569%	|
+|	no				|	30					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	20					|	0.3684614750463296		|	88.70292887029288%	|
+|	no				|	10					|	0.5684614750463296		|	84.93723849372385%	|
+|	no				|	200					|	0.9684614750463296		|	91.42259414225941%	|
+|	no				|	220					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	250					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	300					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	400					|	0.9984614750463296		|	90.3765690376569%	|
+|	no				|	500					|	0.5684614750463296		|	90.5857740585774%	|
+|	no				|	600					|	0.0684614750463296		|	90.3765690376569%	|
+|	no				|	700					|	0.0684614750463296		|	90.3765690376569%	|
+|	no				|	900					|	0.9684614750463296		|	91.42259414225941%	|
+|	no				|	1000				|	0.5684614750463296		|	90.5857740585774%	|
+|-------------------|-----------------------|---------------------------|-----------------------|
+|	yes				|	100					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	90					|	0.1684614750463296		|	90.1673640167364%	|
+|	yes				|	80					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	70					|	0.4684614750463296		|	89.7489539748954%	|
+|	yes				|	60					|	0.0684614750463296		|	91.0041841004184%	|
+|	yes				|	50					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	40					|	0.4684614750463296		|	89.7489539748954%	|
+|	yes				|	30					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	20					|	0.3684614750463296		|	87.86610878661088%	|
+|	yes				|	10					|	0.5684614750463296		|	83.47280334728033%	|
+|	yes				|	200					|	0.9684614750463296		|	91.21338912133892%	|
+|	yes				|	220					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	250					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	300					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	400					|	0.9984614750463296		|	90.7949790794979%	|
+|	yes				|	500					|	0.5684614750463296		|	90.5857740585774%	|
+|	yes				|	600					|	0.0684614750463296		|	91.0041841004184%	|
+|	yes				|	700					|	0.0684614750463296		|	91.0041841004184%	|
+|	yes				|	900					|	0.9684614750463296		|	91.21338912133892%	|
+|	yes				|	1000				|	0.5684614750463296		|	90.5857740585774%	|
+|-------------------|-----------------------|---------------------------|-----------------------|
+
+Once enough iterations are passed, that is when pass is converged, there isn't much difference in the
+accuracy. In fact, accuracy is good enough for 60 iterations with above learning rates.
+
+
+On Weka with 100 attributes only (full output in output.txt):
+-----------------------------------------------------------------------------------------------------
+Time taken to build model: 34.19 seconds
+
+With learning rate: 0.3
+Hiddent layes: a
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.08 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.0601
+Mean absolute error                      1.4276
+Root mean squared error                  1.8955
+Relative absolute error                181.5714 %
+Root relative squared error            212.9643 %
+Total Number of Instances              478     
+
+If entire vocabulary is considered as attributes, Weka crashes after some time (~ 90 minutes)
+with out of memory exception as follows, hence I have taken 100 word in vacabulary.
+mark42@Stark-Industries-II:~/Downloads/weka-3-8-1$ java -jar weka.jar 
+Exception in thread "Thread-27" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	weka.classifiers.functions.neural.NeuralNode.allocateInputs(NeuralNode.java:250)
+	weka.classifiers.functions.neural.NeuralConnection.connectInput(NeuralConnection.java:408)
+	weka.classifiers.functions.neural.NeuralNode.connectInput(NeuralNode.java:228)
+	weka.classifiers.functions.neural.NeuralConnection.connect(NeuralConnection.java:682)
+	weka.classifiers.functions.MultilayerPerceptron.setupHiddenLayer(MultilayerPerceptron.java:1708)
+	weka.classifiers.functions.MultilayerPerceptron.buildClassifier(MultilayerPerceptron.java:1838)
+	weka.gui.explorer.ClassifierPanel$18.run(ClassifierPanel.java:1464)
+
+	at weka.classifiers.functions.neural.NeuralNode.allocateInputs(NeuralNode.java:250)
+	at weka.classifiers.functions.neural.NeuralConnection.connectInput(NeuralConnection.java:408)
+	at weka.classifiers.functions.neural.NeuralNode.connectInput(NeuralNode.java:228)
+	at weka.classifiers.functions.neural.NeuralConnection.connect(NeuralConnection.java:682)
+	at weka.classifiers.functions.MultilayerPerceptron.setupHiddenLayer(MultilayerPerceptron.java:1708)
+	at weka.classifiers.functions.MultilayerPerceptron.buildClassifier(MultilayerPerceptron.java:1838)
+	at weka.gui.explorer.ClassifierPanel$18.run(ClassifierPanel.java:1464)
+
+It is clear from the the results that accurracies from the all of these 3 algorithms are close to each other, however, maximum is in Multinomial Naive Bayes 93.30543933054393% with Skip stopwords = no, but this is case with this particular example and for this perticular training and testing data sets.
