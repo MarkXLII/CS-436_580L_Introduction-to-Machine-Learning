@@ -1,0 +1,30 @@
+java -jar program2.jar hw2-part2/input/train hw2-part2/input/test no >> Results-Part-2.txt
+java -jar program2.jar hw2-part2/input/train hw2-part2/input/test yes >> Results-Part-2.txt
+
+
+With skip-stopwords = no:
+
+Reading training data set...
+Reading testing data set...
+Training classifier...
+Testing classifier...
+Accuracy: (446/478) = 93.30543933054393%
+
+
+With skip-stopwords = yes:
+
+Reading training data set...
+Reading testing data set...
+Training classifier...
+Testing classifier...
+Accuracy: (442/478) = 92.46861924686193%
+
+
+Reason of change in accuracy:
+	There will be slight chnage in accuacy if filter stopwords or not.
+	This will be increase or decrease depending on the testing and training data sets as follows:
+		Let's say stopword "a" occurs more times in spam than in ham in both training and testing data sets and 
+		have less occurences in ham in both training and testing data set. In this case, the stopword "a" is helping 
+		towards correct classifications. But if this is not the case, it'll hurt the accuracy.
+	This will also be dependent on choice of words in stopwords list. For example, in this perticular case, the word "subject" appears 
+	both in spams and hams equally hence it doesn't provide much information.

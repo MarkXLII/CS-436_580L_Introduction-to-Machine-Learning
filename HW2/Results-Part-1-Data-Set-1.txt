@@ -1,0 +1,121 @@
+Maximum accuracy acheived: 95.66666666666667% (before pruning: 95.66666666666667%)
+
+java -jar program1.jar 15 5 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 20 10 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 100 30 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 30 5 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 50 15 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 30 100 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 90 25 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 10 3 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 1000 100 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+java -jar program1.jar 12345 123 hw2-part1/input/dataset_1/training_set.csv hw2-part1/input/dataset_1/validation_set.csv hw2-part1/input/dataset_1/test_set.csv no >> Results-Part-1-Data-Set-1.txt
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 15 K = 5
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 15 K = 5
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 20 K = 10
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 20 K = 10
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 100 K = 30
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 100 K = 30
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 30 K = 5
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 30 K = 5
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 50 K = 15
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 50 K = 15
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 30 K = 100
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 30 K = 100
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 90 K = 25
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 90 K = 25
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 10 K = 3
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 10 K = 3
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 1000 K = 100
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 1000 K = 100
+Accuracy: 572/600 = (95.33333333333333%)
+
+
+Using Information Gain Heuristic
+Accuracy: 574/600 = (95.66666666666667%)
+Post Pruned version, L = 12345 K = 123
+Accuracy: 574/600 = (95.66666666666667%)
+
+Using Variance Impurity Heuristic
+Accuracy: 572/600 = (95.33333333333333%)
+Post Pruned version, L = 12345 K = 123
+Accuracy: 572/600 = (95.33333333333333%)
