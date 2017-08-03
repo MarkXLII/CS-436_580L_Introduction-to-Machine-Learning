@@ -1,0 +1,10 @@
+- HW1
+  - Inducing Decision Trees
+- HW2
+  - Post-Pruning in Decision Trees
+  - Naive Bayes for Text Classification
+- HW3
+  - Logistic Regression
+  - Perceptrons and Neural Networks
+- HW4
+  - Support Vector Machines
